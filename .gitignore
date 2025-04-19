@@ -1,0 +1,12 @@
+.env
+venv/
+data/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.log
+*.csv
+*.tsv
