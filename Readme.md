@@ -28,25 +28,19 @@ python __main__.py
 
 The sigmoid function maps any real value to the range (0, 1), which is useful for binary classification, but it suffers from vanishing gradients.
 
-```tex
-\text{Sigmoid}(x) = \sigma(x) = \frac{1}{1 + \exp(-x)}
-```
+$\text{Sigmoid}(x) = \sigma(x) = \frac{1}{1 + \exp(-x)}$
 
 ### ReLU
 
 ReLU is widely used in deep learning due to its simplicity and ability to mitigate the vanishing gradient problem.
 
-```tex
-\text{ReLU}(x) = (x)^+ = \max(0, x)
-```
+$\text{ReLU}(x) = \max(0, x)$
 
 ### GELU
 
 GELU is a smoother alternative to ReLU that incorporates the input value and its distribution. It's used in many modern architectures (e.g., Transformers).
 
-```tex
-\text{GELU}(x) = 0.5 * x * (1 + \text{Tanh}(\sqrt(2 / \pi) * (x + 0.044715 * x^3)))
-```
+$\text{GELU}(x) = 0.5 \cdot x \cdot \left(1 + \tanh\left(\sqrt{\frac{2}{\pi}} \cdot (x + 0.044715 \cdot x^3)\right)\right)$
 
 ##  Running the Code
 
